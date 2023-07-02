@@ -9,5 +9,6 @@ from .serializers import ProductSerializer
 @api_view(['GET'])
 def products(request):
     products = Product.objects.all()
-    serializer = ProductSerializer(products, many=True,context={'request': request})
+    serializer = ProductSerializer(products, many=True)
+    # context = {'request': request}
     return Response(data=serializer.data,status=status.HTTP_200_OK)

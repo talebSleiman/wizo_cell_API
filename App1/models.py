@@ -19,8 +19,8 @@ class Product(models.Model):
     price = models.FloatField(verbose_name='Price')
     type = models.CharField(max_length=10,choices=SERVICE_TYPE, verbose_name='Service Type')
     category = models.CharField(max_length=20, verbose_name='Category', choices=CATEGORY_TYPE)
-    image = models.ImageField(upload_to='static', verbose_name='Image')
-
+    # image = models.ImageField(upload_to='static', verbose_name='Image')
+    image = models.CharField(max_length=50,verbose_name='Image Path')
     def __str__(self):
         return self.name
 

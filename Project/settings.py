@@ -71,14 +71,21 @@ TEMPLATES = [
 
 WSGI_APPLICATION = 'Project.wsgi.application'
 
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.mysql',
+#         'NAME': 'wizocell',
+#         'USER': 'admin',
+#         'PASSWORD': 'bBIohSf7',
+#         'HOST': 'mysql-130925-0.cloudclusters.net',
+#         'PORT': '19261',
+#     }
+# }
+
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'wizocell',
-        'USER': 'admin',
-        'PASSWORD': 'bBIohSf7',
-        'HOST': 'mysql-130925-0.cloudclusters.net',
-        'PORT': '19261',
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': BASE_DIR / 'db.sqlite3',
     }
 }
 
