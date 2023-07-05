@@ -137,3 +137,11 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 STATICFILES_DIRS = [
     os.path.join(BASE_DIR, "static")
 ]
+
+JAZZMIN_SETTINGS = {
+    "site_title": "Wizo Cell",
+    "site_header": "Wizo Cell",
+    "site_brand": "Wizo Cell",
+    "welcome_sign": "Welcome to the Wizo Cell Admin Panel",
+    "copyright": "Taleb Sleiman",
+}
