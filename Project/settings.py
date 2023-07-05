@@ -71,23 +71,16 @@ TEMPLATES = [
 
 WSGI_APPLICATION = 'Project.wsgi.application'
 
+DATABASES = {
+    'default': dj_database_url.parse('postgres://wizodb_user:sDqYJPmXrHBm4K52cxwDXFTRlczKaqv9@dpg-ciijp7mnqql0tc4gg9u0-a.oregon-postgres.render.com/wizodb')
+}
+
 # DATABASES = {
 #     'default': {
-#         'ENGINE': 'django.db.backends.mysql',
-#         'NAME': 'wizocell',
-#         'USER': 'admin',
-#         'PASSWORD': 'bBIohSf7',
-#         'HOST': 'mysql-130925-0.cloudclusters.net',
-#         'PORT': '19261',
+#         'ENGINE': 'django.db.backends.sqlite3',
+#         'NAME': BASE_DIR / 'db.sqlite3',
 #     }
 # }
-
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
-    }
-}
 
 # STORAGES = {
 #     "staticfiles": {
